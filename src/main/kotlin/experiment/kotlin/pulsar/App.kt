@@ -10,7 +10,8 @@ fun main(args: Array<String>) {
     // Uncomment items below to try them out independently
 
     // schemaExample(client)
-    multiTopicSubscriptionExample(client)
+    // multiTopicSubscriptionExample(client)
+    asyncExample(client)
 
     // In real usage, we should close producers, consumers, clients when they are no longer needed
     // producer.close()
