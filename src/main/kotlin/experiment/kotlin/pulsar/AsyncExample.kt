@@ -1,6 +1,6 @@
 package experiment.kotlin.pulsar
 
-import java.util.*
+import java.util.UUID
 import org.apache.pulsar.client.api.Producer
 import org.apache.pulsar.client.api.PulsarClient
 import org.apache.pulsar.client.api.Schema

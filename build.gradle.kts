@@ -14,12 +14,14 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-    compile("org.apache.pulsar:pulsar-client:2.4.1")
+    implementation("org.apache.pulsar:pulsar-client:2.4.0")
+    implementation("org.apache.pulsar:pulsar-client-admin:2.4.0")
+    implementation("org.slf4j:slf4j-simple:1.7.30")
 
     // Jackson + Kotlin dependencies
-    compile("org.jetbrains.kotlin:kotlin-reflect:1.3.50")
-    compile("com.fasterxml.jackson.core:jackson-databind:2.9.9.3")
-    compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.3.50")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.9.9.3")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+")
 }
 
 application {
