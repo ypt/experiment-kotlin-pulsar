@@ -1,8 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.3.50"
     application
+    id("org.jetbrains.kotlin.jvm") version "1.3.50"
+    id("com.commercehub.gradle.plugin.avro") version "0.21.0"
 }
 
 repositories {
@@ -14,9 +15,10 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-    implementation("org.apache.pulsar:pulsar-client:2.4.0")
-    implementation("org.apache.pulsar:pulsar-client-admin:2.4.0")
+    implementation("org.apache.pulsar:pulsar-client:2.6.0")
+    implementation("org.apache.pulsar:pulsar-client-admin:2.6.0")
     implementation("org.slf4j:slf4j-simple:1.7.30")
+    implementation("org.apache.avro:avro:1.10.0")
 
     // Jackson + Kotlin dependencies
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.3.50")
