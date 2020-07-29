@@ -17,7 +17,8 @@ fun main(args: Array<String>) {
     // schemaExample(client, adminClient)
     // multiTopicSubscriptionExample(client)
     // asyncExample(client)
-    avroExample(client, adminClient)
+    // avroExample(client, adminClient)
+    avroWithoutPulsarSchemaRegistryExample(client, adminClient)
 
     // In real usage, we should close producers, consumers, clients when they are no longer needed
     // producer.close()
